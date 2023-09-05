@@ -1,0 +1,104 @@
+<style>
+.nav-link {
+	color: white !important;
+	font-family: Arial;
+	font-size: 18px;
+}
+
+.dropdown-item {
+	color: black !important;
+	font-family: Arial;
+	font-size: 18px;
+}
+
+.navbar {
+	background-color: black;
+	width: 100%;
+}
+</style>
+<nav class="navbar navbar-expand-lg">
+	<div class="container-fluid">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+			data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"><i class="fas fa-bars"
+				style="color: #fff; font-size: 28px;"></i></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item"><a class="nav-link active"
+					aria-current="page" href="/client/client_home"
+					style="font-weight: bold; font-size: large;"><img
+						style="height: 32px; width: 32px; margin-right: 3px;"
+						src="/images/favicon.png">TRANSPORTATION BUDDY</a></li>
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"> Messages </a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="/client/compose_client"><i
+								class="fa-solid fa-pen-to-square"></i> Compose</a></li>
+						<li><a class="dropdown-item" href="/inbox"><i
+								class="fa-solid fa-envelope"></i> Inbox</a></li>
+						<li><a class="dropdown-item" href="/sent"> <i
+								class="fa-solid fa-envelope-circle-check"
+								style="color: #000000;"></i> Sent
+						</a></li>
+					</ul></li>
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"> View </a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="/client/viewProfile">
+								<i class="fa-solid fa-user" style="color: #000000;"></i> Profile
+						</a></li>
+						<li><a class="dropdown-item" href="/client/bookedCabStatus">
+								<i class="fa-solid fa-circle-check" style="color: #000000;"></i>
+								Cab Status
+						</a></li>
+						<li><a class="dropdown-item" href="/client/bookedGoodsStatus">
+								<i class="fa-solid fa-circle-check" style="color: #000000;"></i>
+								Goods Vehicle Status
+						</a></li>
+					</ul></li>
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"> Book </a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="/client/client_bookCab">
+								<i class="fa-solid fa-taxi" style="color: #000000;"></i> Cab
+						</a></li>
+						<li><a class="dropdown-item"
+							href="/client/client_bookGoodsVehicle"> <i
+								class="fa-solid fa-truck" style="color: #000000;"></i> Goods
+								Vehicle
+						</a></li>
+					</ul></li>
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"> Settings </a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="/client/change_password"> <i
+								class="fa-solid fa-user-lock" style="color: #000000;"></i>
+								Change password
+						</a></li>
+						<li><a class="dropdown-item" href="/client/editProfile">
+								<i class="fa-solid fa-user-pen" style="color: #000000;"></i>
+								Edit profile
+						</a></li>
+						<!-- <li><hr class="dropdown-divider"></li> -->
+						<!-- <li><a class="dropdown-item" href="/client/client_logout">Logout</a></li> -->
+					</ul></li>
+			</ul>
+
+			<form class="d-flex flex-row">
+				<div class="p-2">
+					<a href="/client/client_logout">
+						<button class="btn btn-primary"
+							style="font-weight: 600; border-radius: 20px;" type="button">LOGOUT</button>
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</nav>
